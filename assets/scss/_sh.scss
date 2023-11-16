@@ -1,0 +1,228 @@
+// navbar start
+body{
+    font-family: 'Kanit' !important;
+
+}
+.navbar{
+
+    height: 80px;
+    // background-color: $theme1;
+    @include sm{
+        height: 87px;
+    }
+    & .navLogo{
+        height: 28px;
+        @include sm{
+            height: 35px;
+        }
+        @include md{
+        height: 45px;
+
+        }
+        
+    }
+    & .navbar-toggler{
+        & .menuIcon{
+            width: 25px;
+            height:25px;
+            @include sm{
+                width: 30px;
+                height:30px;
+            }
+        }
+    }
+    & .navbar-nav{
+    
+        & .navItem{
+            position: relative;
+            transition: all 0.3s ease-in-out;
+      
+            & .mainLink{
+                padding: 32px 0px;
+                transition: all 0.3s ease-in-out;
+
+                & .navLink{
+                    font-size: 14px;
+                    color: $white;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-family: 'Kanit';
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color:lighten($theme1, 40);
+                    }
+                
+    
+                }
+                & .arrowIcon{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    & img{
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+
+// mobile offcanvas 
+
+.mobileOffcanvas{
+    width: 300px !important;
+    & .logomobile{
+        height: 36px;
+    }
+    & .closeBtn{
+        width: 25px;
+        height: 25px;
+    
+    }
+    & .inputGroup{
+        & .inputSearch{
+            border-radius: 100px;
+            background-color: #f1f2f6;
+            border-bottom: 2px solid #ececec;
+            padding: 0 15px;
+            height: 40px;
+            font-size: 18px;
+            color: $black;
+            font-weight: 600;
+            height: 40px;
+            &::placeholder{
+                font-size: 17px;
+                color: $black;
+                font-weight: 600;
+
+            }
+        }
+        & .searchIcon{
+            background-color: #f1f2f6;
+            border-radius: 100px;
+            border: none;
+            box-shadow: none;
+            width: 40px;
+            height: 40px;
+            padding: 8px !important;
+        }
+    }
+    & .mobileUl{
+        & .mobileLink{
+            color:$black;
+            font-size: 14px;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(0,0,0,6%);
+            padding: 10px 5px 10px 10px;
+            text-decoration: none;
+            &.active{
+            color: #ff7268;
+            }
+        }
+    }
+    & .mobileAccordion{
+      
+        & .itemAccordion{
+            border: none;
+            box-shadow: none;
+            & .accordionBtn{
+                border: none;
+                box-shadow: none;
+                color:$black;
+                font-size: 14px;
+                font-weight: 700;
+                border-bottom: 1px solid rgba(0,0,0,6%);
+                padding: 7px 5px 7px 10px;
+                &.active{
+                color: #ff7268;
+                }
+                &::after{
+                    border-radius: 3px;
+                    background-color: rgba(0,0,0,3%);
+                    height: 28px;
+                    width: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-position: center;
+                    background-size: 10px;
+                }
+            }
+            & .accordionBtn:not(.collapsed){
+                background-color: transparent;
+                border-radius: 0px;
+            }
+
+            & .mobileMenu{
+                background-color: transparent;
+                & .subMenuLink{
+                    font-size: 13px;
+                    display: block;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-bottom: 1px solid rgba(0,0,0,6%);
+                    text-decoration: none;
+                    padding: 10px 10px;
+                    @include sm{
+                    padding: 13px 12px;
+                    font-size: 14px;
+
+                    }
+                    // &.active{
+                    //     color: #ff7268;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+// navbar end 
+
+
+// hero section 
+.heroSection{
+    background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%);
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    // &::after{
+    //     position: absolute;
+    //     content: '';
+    //     background-image: url(../img/testi-bg.png);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+    //     height: 100%;
+    //     width: 100%;
+    //     inset: 0;
+    //     filter: invert(1);
+    //     z-index: 2;
+    // }
+    & .heroContent{
+        z-index: 555 !important;
+        position: relative;
+        & .inputNumberGroup{
+            height: 53px;
+          border-radius: 5px;
+          background-color: $white;
+          padding: 2px;
+            & input{
+                font-size: 16px;
+                font-weight: 500;
+                color: $black;
+                &::placeholder{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

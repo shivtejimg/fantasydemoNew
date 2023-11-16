@@ -1,0 +1,223 @@
+// For Normal Text
+
+.body_text{
+    color: $white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_text_small{
+    font-size: 14px;
+    color: $black;
+    line-height: 1.6;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_text_large{
+    font-size: 18px;
+    color: $black;
+    line-height: 1.8;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Space Between Sections Must Apply On Container Fluid
+
+.section_spacing{
+    padding-block: 1.5rem;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        padding-block: 2.5rem;
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Dark Theme and Light Theme
+
+.bg_drak{
+    background-color: $black;
+}
+
+.bg_light{
+    background-color: #F8F9FA;
+}
+
+// For Heading
+
+.body_heading{
+    color: $white;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_heading_small{
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_heading_large{
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+// For Subheading
+
+.body_subheading{
+    color: $black;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.56px;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_subheading_small{
+    font-size: 12px;
+    font-weight: 700;
+    color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+
+.body_subheading_large{
+    font-size: 15px;
+    font-weight: 700;
+    color: $gray-600;
+    @include sm{
+
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+    @include xl{
+        
+    }@include xxl{
+        
+    }
+}
+.opColor{
+    color: #A7BABA;
+}
