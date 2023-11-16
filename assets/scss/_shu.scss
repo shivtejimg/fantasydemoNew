@@ -1,3 +1,4 @@
+// card Section Start
 .cardSection{
     & .mainCard{
         border: 2px solid black;
@@ -89,6 +90,7 @@
         }
     }
 }
+// card Section end
 
 // video Section start
     .videoSection{
@@ -136,3 +138,58 @@
         }
     }
 // video Section Ends
+
+// footer start
+    .footerSection{
+        background-color: $black;
+        & .logoImg{
+            height: 55px;
+            width: 200px;
+        }
+        & .heading{
+            padding-top: 40px;
+            font-size: 20px;
+            font-weight: 500;
+            color: $white;
+        }
+        & .links{
+            padding-top: 10px;
+            & .linksAnc{
+                color: $white;
+            }
+        }
+        & .paymentDiv{
+            & .paymentImg{
+                overflow: hidden;
+                border-radius: 5px;
+                height: 36px;
+                width: 74px;
+            }
+        }
+        & .mainPayCard{
+            border: 1px solid hsla(0,0%,100%,.3137254902);
+            border-radius: 8px;
+            padding: 20px 10px;
+            & .crdImg{
+                height: 20px;
+                width: 20px;
+            }
+            & .txt{
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 100%;
+            }
+            & .txtTwo{
+                color: $white;
+                opacity: 0.6;
+                font-size: 12px;
+                line-height: 100%;
+            }
+        }
+        & .isoImg{
+            height: 65px;
+            width: 100%;
+        }
+    }
+// footer ends
