@@ -5,7 +5,7 @@ body{
 }
 .navbar{
     height: 80px;
-    // background-color: $theme1;
+   
     @include sm{
         height: 87px;
     }
@@ -70,6 +70,19 @@ body{
     }
 }
 
+body{
+    & .navbar{
+        &.nav-active{
+            background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%) !important;
+
+        }
+        &:not(.nav-active){
+            background-color: transparent;
+    
+        }
+    }
+
+}
 
 // mobile offcanvas 
 
@@ -331,7 +344,7 @@ body{
         box-shadow: none;
         border-bottom: 1px solid rgba(254, 254, 254, .08);
         & .accordion-header{
-            height: 60px;
+            // height: 60px;
             border: none;
             background-color: transparent;
             box-shadow: none;
@@ -343,6 +356,7 @@ body{
                 font-size: 18px;
                 color: $white;
                 font-weight: 400;
+                padding: 30px 0px;
                 &::after{
                     filter: invert(1);
                 }
@@ -353,4 +367,110 @@ body{
         }
     }
 }
+}
+
+.ctaSection{
+    & .ctaCard{
+        background-color: $theme3;
+        border-radius: 18px;
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        @include sm{
+        padding: 30px 70px;
+
+        }
+        @include md{
+        padding: 40px 90px;
+
+        }
+        & .cardContent{
+            position: relative;
+            z-index: 55;
+            & .userImg{
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+            & .ctaHeading{
+                font-size: 32px;
+                line-height: 43px;
+                font-weight: 500;
+                color: $theme2;
+                @include md{
+                    font-size: 43px;
+                    line-height: 53px;
+                }
+            }
+            & .ctaButton{
+                color: $white;
+                background-color: $theme1;
+                border: 2px solid $theme1;
+                border-radius: 8.54px;
+                padding: 15px 34px;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.1em;
+                transition: all .2s;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                text-decoration: none;
+                @include sm{
+                    font-size: 18px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                @include md{
+                font-size: 20px;
+
+                }
+            }
+            
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../img/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            inset: 0;
+            filter: invert(1);
+            z-index: 2;
+        }
+    }
+}
+
+.bottomFutter{
+    background-color: $theme3;
+    // height: 100px;
+    padding: 15px 0px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        filter: invert(1);
+        z-index: 1;
+    }
+    & .logo{
+        width: 180px;
+        height:60px;
+
+        
+    }
 }

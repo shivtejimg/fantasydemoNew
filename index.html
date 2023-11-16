@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./assets/libs/jquery/jquery.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="assets/libs/swiper/swiper.css">
 </head>
 <body>
 <!-- navbar start -->
-
-<nav class="navbar navbar-expand-lg fixed-top  container " aria-label="Offcanvas navbar large">
-      <a class="navLogo d-flex align-items-center" href="javascript:;"><img src="assets/img/navbar/logo.webp" alt="logo" class="img-fluid w-100 h-100"></a>
-      <button class="navbar-toggler d-lg-none d-flex align-items-center border-0 shadow-none "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="menuIcon d-inline-flex align-items-center"> <img src="assets/img/navbar/menu.svg" alt="menu" class="img-fluid w-100 h-100"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark d-lg-block d-none" >
-      
-        <div class="offcanvas-body ">
-            <ul class="navbar-nav justify-content-end gap-5 flex-grow-1 pe-3">
-              <li class="nav-item navItem">
-                <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Apply</span></a>
-              </li>
-              <li class="nav-item navItem">
-                <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Blog</span>  </a>
+<nav class="container-fluid nav navbar fixed-top toggalClass navbar-expand-lg "  aria-label="Offcanvas navbar large"> 
+  <div class="  container ">
+        <a class="navLogo d-flex align-items-center" href="javascript:;"><img src="assets/img/navbar/logo.webp" alt="logo" class="img-fluid w-100 h-100"></a>
+        <button class="navbar-toggler d-lg-none d-flex align-items-center border-0 shadow-none "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="menuIcon d-inline-flex align-items-center"> <img src="assets/img/navbar/menu.svg" alt="menu" class="img-fluid w-100 h-100"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark d-lg-block d-none" >
+        
+          <div class="offcanvas-body ">
+              <ul class="navbar-nav justify-content-end gap-5 flex-grow-1 pe-3">
+                <li class="nav-item navItem">
+                  <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Apply</span></a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Blog</span>  </a>
+              
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Docs</span>  </a>
+               
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Enterprise</span> </a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Contact Us</span> </a>
+                </li>
             
-              </li>
-              <li class="nav-item navItem">
-                <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Docs</span>  </a>
-             
-              </li>
-              <li class="nav-item navItem">
-                <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Enterprise</span> </a>
-              </li>
-              <li class="nav-item navItem">
-                <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink ">Contact Us</span> </a>
-              </li>
-          
-              <li class="nav-item navItem d-flex align-items-center">
-                <a class=" navBtn" aria-current="page" href="#"><span class="d-inline-flex align-items-center androidIcon"><img src="assets/img/navbar/android.svg" alt="android" class="img-fluid w-100 h-100"></span> Download Now </a>
-              </li>
-            </ul>
-          
-        </div>
-    </div>
-    
+                <li class="nav-item navItem d-flex align-items-center">
+                  <a class=" navBtn" aria-current="page" href="#"><span class="d-inline-flex align-items-center androidIcon"><img src="assets/img/navbar/android.svg" alt="android" class="img-fluid w-100 h-100"></span> Download Now </a>
+                </li>
+              </ul>
+            
+          </div>
+      </div>
+      
+  </div>
 </nav>
+
 
 <!-- navbar end  -->
 <!-- hero sectio  start  -->
@@ -77,6 +81,222 @@
     </div>
 
 <!-- hero sectio  end  -->
+
+   <!-- card dsection start -->
+   <div class="container-fluid cardSection section_spacing  ">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="mainCard">
+                    <div class="imgDiv">
+                        <img src="./assets/img/rummy.svg" alt="rummyImg" class="h-100 w-100">
+                    </div>
+                    <div class="cardHeding pt-3 pt-sm-4 pt-md-5">
+                        Gamezy Rummy is now 
+                        <div class="cardSpan">
+                            RummyPrime
+                        </div>
+                    </div>
+                    <div class="row pt-3 pt-md-4 pt-md-5">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-auto pe-2">
+                                            <div class="starImg">
+                                                <img src="./assets/img/starWhite.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="number">
+                                                4.6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        App Rating
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="number">
+                                        25M+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Downloads
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="starImg mb-2">
+                                        <img src="./assets/img/robot.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Availble on
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonDiv">
+                        <button class="btn cardBtn" type="button">Know More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="mainCard">
+                    <div class="imgDiv">
+                        <img src="./assets/img/ludo.svg" alt="rummyImg" class="h-100 w-100">
+                    </div>
+                    <div class="cardHeding pt-3 pt-sm-4 pt-md-5">
+                        Gamezy Ludo is now 
+                        <div class="cardSpan">
+                            Ludo Culture
+                        </div>
+                    </div>
+                    <div class="row pt-3 pt-md-4 pt-md-5">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-auto pe-2">
+                                            <div class="starImg">
+                                                <img src="./assets/img/starWhite.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="number">
+                                                4.6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        App Rating
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="number">
+                                        25M+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Downloads
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="starImg mb-2">
+                                        <img src="./assets/img/robot.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Availble on
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonDiv">
+                        <button class="btn cardBtn" type="button">Know More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="mainCard">
+                    <div class="imgDiv">
+                        <img src="./assets/img/poker.svg" alt="rummyImg" class="h-100 w-100">
+                    </div>
+                    <div class="cardHeding pt-3 pt-sm-4 pt-md-5">
+                        Check out the new 
+                        <div class="cardSpan">
+                            Gamezy Poker
+                        </div>
+                    </div>
+                    <div class="row pt-3 pt-md-4 pt-md-5">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-auto pe-2">
+                                            <div class="starImg">
+                                                <img src="./assets/img/starWhite.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="number">
+                                                4.6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        App Rating
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="number">
+                                        25M+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Downloads
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="starImg mb-2">
+                                        <img src="./assets/img/robot.svg" alt="starImg" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="apptxt">
+                                        Availble on
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonDiv">
+                        <button class="btn cardBtn" type="button">Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- card dsection Ends --> 
 
 <!-- fan app section start  -->
 
@@ -140,7 +360,7 @@
         </div>
       </div>
       <div class="col-lg-5 order-lg-2 order-1 mx-auto">
-        <div class="plyerImg rounded-3 overflow-hidden"><img src="assets/img/fantasysports.jpg" alt="player" class="img=img-fluid w-100 h-100"></div>
+        <div class="plyerImg rounded-4 overflow-hidden"><img src="assets/img/fantasysports.jpg" alt="player" class="img=img-fluid w-100 h-100"></div>
       </div>
     </div>
   </div>
@@ -150,7 +370,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 mx-auto">
-        <div class="plyerImg rounded-3 overflow-hidden"><img src="assets/img/fantasy.jpg" alt="player" class="img=img-fluid w-100 h-100"></div>
+        <div class="plyerImg rounded-4 overflow-hidden"><img src="assets/img/fantasy.jpg" alt="player" class="img=img-fluid w-100 h-100"></div>
       </div>
       <div class="col-lg-6 ">
         <div class="row">
@@ -168,6 +388,69 @@
   </div>
 </div>
 <!-- split section end  -->
+
+   <!-- video Section start -->
+   <div class="container-fluid videoSection section_spacing">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 order-2 order-md-1">
+                <div class="mainDiv shadow-lg text-center rounded-3">
+                    <div class="heading">
+                        Download Now!
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-10">
+                            <div class="secImg py-2 py-md-3">
+                                <img src="./assets/img/googlepay.png" alt="appStore" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-10">
+                            <div class="secImg py-2 py-md-3">
+                                <img src="./assets/img/appstore.png" alt="appStore" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-10">
+                            <div class="secImg py-2 py-md-3">
+                                <img src="./assets/img/webstore.png" alt="appStore" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-9 order-1 order-md-2">
+                <div class="ImgAbout rounded-2 overflow-hidden  position-relative z-3 shadow-lg" >
+                    <img src="./assets/img/video.jpg" alt="about us" class=" img-fluid w-100 h-100">
+                    <div class="videoPlay">
+                        <a href="https://www.youtube.com/watch?v=ZqJZyxVdLZA&amp;list=RDGMEM916WJxafRUGgOvd6dVJkeQ&amp;index=7" class="text-decoration-none d-flex align-items-center justify-content-center glightboxx ">
+                            <img src="./assets/img/youtube.svg" alt="about us" class=" img-fluid w-100 h-100">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- video Section Ends -->
+
+<div class="container-fluid ctaSection section_spacing">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="ctaCard">
+          <div class="cardContent">
+            <div class="userImg"><img src="assets/img/usericon.svg" alt="user" class="img-fluid w-100 h-100"></div>
+            <div class="ctaHeading text-center mt-3">
+              Ultrafair Fantasy Sports – where Sports, Strategy & Rewards come together
+            </div>
+            <div class="mx-auto text-center d-flex align-items-center mt-4">
+              <a href="javscript:;" class="ctaButton">Start Playing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Frequently Asked Questions start  -->
 
@@ -282,6 +565,25 @@
 
 <!-- Frequently Asked Questions end  -->
 
+<div class="container-fluid bottomFutter">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-3">
+        <a href="javascript:;" class="d-flex align-items-center justify-content-center position-relative z-2 logo "><img src="assets/img/navbar/logo.webp" alt="logo" class="img-fluid w-100 h-100"></a>
+      </div>
+      <div class="col-5">
+        <div class="row">
+          <div class="col-md-12 ms-lg-0 mx-auto  mt5">
+            <div class="input-group bg-white rounded-2 position-relative z-2 border-0 shadow-none inputNumberGroup d-flex align-items-center justify-content-center">
+              <input type="text" class="form-control border-0 shadow-none bg-transparent" placeholder="Enter 10 digit mobile number" aria-label="Recipient's username" aria-describedby="button-addon2" maxlength="10">
+              <button class=" border-0 shadow-none d-flex align-items-center navBtn" type="button" id="button-addon2"><span class="d-inline-flex align-items-center androidIcon"><img src="assets/img/navbar/android.svg" alt="android" class="img-fluid w-100 h-100"></span> Download Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- nav offcanvas  -->
 <div class="offcanvas offcanvas-start  d-lg-none mobileOffcanvas d-block mobileOffcanvas" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
@@ -322,5 +624,19 @@
       clickable: true,
     },
   });
+</script>
+
+
+<!-- nav script  -->
+
+<script>
+ $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll <= 120) {
+        $("nav.navbar").removeClass("nav-active");
+    } else {
+        $("nav.navbar").addClass("nav-active");
+    }
+});
 </script>
 </html>
