@@ -4,7 +4,6 @@ body{
 
 }
 .navbar{
-
     height: 80px;
     // background-color: $theme1;
     @include sm{
@@ -76,12 +75,17 @@ body{
 
 .mobileOffcanvas{
     width: 300px !important;
+    color: #fff!important;
+    background-color:$theme2 !important;
     & .logomobile{
         height: 36px;
     }
     & .closeBtn{
         width: 25px;
         height: 25px;
+        & img{
+            filter: invert(1);
+        }
     
     }
     & .inputGroup{
@@ -114,10 +118,10 @@ body{
     }
     & .mobileUl{
         & .mobileLink{
-            color:$black;
+            color:$white;
             font-size: 14px;
-            font-weight: 700;
-            border-bottom: 1px solid rgba(0,0,0,6%);
+            font-weight: 600;
+            border-bottom: 1px solid rgb(226, 223, 223);
             padding: 10px 5px 10px 10px;
             text-decoration: none;
             &.active{
@@ -189,22 +193,37 @@ body{
 // hero section 
 .heroSection{
     background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%);
+    // background-image: linear-gradient(rgba(30, 44, 55, .31), #032A37), linear-gradient(rgba(17, 148, 255, 0.16), rgba(17, 148, 255, 0.493)), url(../img/background.png);
+
     height: 100vh;
     z-index: 1;
     position: relative;
-    // &::after{
-    //     position: absolute;
-    //     content: '';
-    //     background-image: url(../img/testi-bg.png);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     height: 100%;
-    //     width: 100%;
-    //     inset: 0;
-    //     filter: invert(1);
-    //     z-index: 2;
-    // }
+
+    @include sm{
+
+    }
+    @include lg{
+        height: 80vh;
+    }
+    @include xl{
+    height: 100vh;
+    }
+    @include xxl{
+
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        filter: invert(1);
+        z-index: 2;
+    }
     & .heroContent{
         z-index: 555 !important;
         position: relative;
@@ -224,5 +243,114 @@ body{
                 }
             }
         }
+        
     }
+    & .heroImg{
+        width: 350px;
+        height: 350px;
+        @include sm{
+            width: 400px;
+            height: 400px;
+        }
+        @include lg{
+            height: auto;
+            width: auto;
+        }
+    }
+}
+
+// fan app section 
+
+.fanAppSection{
+    & .sliderImg{
+        height: 500px;
+        width: 280px;
+        @include lg{
+            height: 670px;
+            width: 370px;
+        }
+    }
+    & .appIcon{
+        height: 50px;
+        width: 150px;
+        transition: all 0.3s ease-in-out;
+        @include sm{
+            height: 55px;
+            width: 160px;
+            &:hover{
+                transform: scale(0.9);
+            }
+
+        }
+    }
+}
+
+.splitGame{
+    & .plyerImg{
+        position: relative;
+        &:hover{
+            &::before{
+
+                animation: shine 1s;
+            }
+
+        }
+        &::before{
+            position: absolute;
+        top: 0;
+        left: -100%;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+        background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(rgba(255,255,255,.3)));
+        background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        -ms-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+        transition: all .3s ease;
+        }
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+// accodionSection start 
+
+.accodionSection{
+    background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%);
+& .accordion{
+    border: none;
+    & .accordion-item{
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: 1px solid rgba(254, 254, 254, .08);
+        & .accordion-header{
+            height: 60px;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            & .accordion-button{
+                padding-left: 0;
+                border: none;
+                background-color: transparent;
+                box-shadow: none;
+                font-size: 18px;
+                color: $white;
+                font-weight: 400;
+                &::after{
+                    filter: invert(1);
+                }
+            }
+        }
+        & .accordion-body{
+            background-color: $theme2;
+        }
+    }
+}
 }
