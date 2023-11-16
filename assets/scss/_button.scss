@@ -47,3 +47,50 @@
         }
     }
 }
+.cardBtn{
+    padding: 8px 14px !important;
+    color: $theme1 !important;
+    background: $white !important;
+    border-radius: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    @include sm{
+        font-size: 16px !important;
+        padding: 10px 16px !important;
+    }
+    @include lg{
+        font-size: 18px !important;
+        padding: 12px 20px !important;
+    }
+    &:hover{
+        background-color: $theme2 !important;
+        color: white !important;
+        &::before{
+            animation: shine 1s;
+        }
+    }
+    &::before{
+        position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(rgba(255,255,255,.3)));
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    transition: all .3s ease;
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+}
