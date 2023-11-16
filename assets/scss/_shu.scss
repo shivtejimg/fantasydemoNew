@@ -89,3 +89,50 @@
         }
     }
 }
+
+// video Section start
+    .videoSection{
+        & .mainDiv{
+            background-color: $white;
+            padding: 5% 20px;
+            height: 100%;
+            @include md{
+                padding: 10% 20px;
+            }
+            & .heading{
+                font-size: 25px;
+                font-weight: 600;
+                color: $black;
+                @include lg{
+                    font-size: 32px;
+                }
+            }
+            & .secImg{
+                height: 70px;
+                width: 70%;
+                margin-inline: auto;
+                @include sm{
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+        }
+        & .ImgAbout{
+            height: 350px;
+            @include md{
+                height: 410px;
+            }
+            & img{
+                object-fit: cover;
+            }
+            & .videoPlay{
+                height: auto;
+                width: 70px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+// video Section Ends
