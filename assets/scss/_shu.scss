@@ -325,3 +325,74 @@
         }
     }
 // terms Content ends
+
+// faq section start
+    .faqheader{
+        background-image: url(../img/faqback.avif) !important;
+    }
+    .myNAv{
+        column-gap: 8px !important;
+        & .myNAvItem{
+                width: 48% !important;
+                // border: 1px solid black;
+                margin-block: 5px;
+                @include md{
+                    width: 100% !important;
+                }
+            & .myNAvlink{
+                width: 100% !important;
+                text-align: start !important;
+                font-size: 16px;
+                color: $white;
+                font-weight: 500;
+                background-color: $theme2;
+                border-radius: 10px;
+                padding: 10px;
+                @include sm{
+                    font-size: 18px;
+                }
+                @include lg{
+                    font-size: 20px;
+                }
+                &.active{
+                    background-color: $theme1;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .myaccodionSection{
+        background: $white !important;
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    background-color: aliceblue !important;
+                    padding-inline: 10px;
+                    margin-block: 5px;
+                    & .accordion-button{
+                        padding: 20px 0 !important;
+                        &::after{
+                            filter: none !important;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    .textHead{
+        font-size: 25px;
+        font-weight: 600;
+        z-index: 1;
+        line-height: 110%;
+        @include sm{
+            font-size: 30px;
+        }
+        @include md{
+            font-size: 40px;
+        }
+        @include lg{
+            font-size: 50px;
+        }
+    }
+// faq section ends
