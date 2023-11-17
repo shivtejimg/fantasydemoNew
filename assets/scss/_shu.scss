@@ -260,7 +260,7 @@
         background-position: center;
         height: 50vh;
         position: relative;
-        z-index: -2;
+        // z-index: -2;
         &::after{
             position: absolute;
             content: '';
@@ -269,13 +269,14 @@
             left: 0%;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.3);
-            z-index: -1;
+            z-index: 1;
         }
         & .termsTxt{
             font-size: 25px;
             font-weight: 600;
             color: $white;
-            z-index: 1;
+            z-index: 2;
+            position: relative;
             @include sm{
                 font-size: 30px;
             }
@@ -289,6 +290,8 @@
         & .termsPage{
             font-size: 16px;
             color: $white;
+            z-index: 2;
+            position: relative;
             @include md{
                 font-size: 18px;
             }
@@ -298,10 +301,14 @@
             @include lg{
                 font-size: 22px;
             }
+            .breadcrumb-item+.breadcrumb-item::before{
+                color: $white !important;
+            }
             & .termsSpan{
                 font-weight: 500;
                 color: yellow;
             }
+            
         }
     }
 // term Header ends
