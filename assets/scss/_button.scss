@@ -94,3 +94,59 @@
         }
     }
 }
+
+
+
+ .ctaButton{
+    color: $white;
+    background-color: $theme2;
+    border: 2px solid $theme2;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1em;
+    transition: all .2s;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+
+    @include sm{
+        font-size: 15px;
+        &:hover{
+         &::before{
+            animation: shine 1s;
+         }
+        }
+    }
+    @include md{
+    font-size: 16px;
+
+    }
+
+    &::before{
+        position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(rgba(255,255,255,.3)));
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    transition: all .3s ease;
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+}
