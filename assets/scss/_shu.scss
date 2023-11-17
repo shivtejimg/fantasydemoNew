@@ -254,13 +254,13 @@
 
 // term Header start
     .termHeader{
-        background-image: url(../img/termsBack.jpg);
+        background-image: url(../img/termsBack.jpg) !important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 50vh;
         position: relative;
-        z-index: -2;
+        // z-index: -2;
         &::after{
             position: absolute;
             content: '';
@@ -269,21 +269,46 @@
             left: 0%;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.3);
-            z-index: -1;
-        }
-        & .termsTxt{
-            font-size: 50px;
-            font-weight: 600;
-            color: $white;
             z-index: 1;
         }
-        & .termsPage{
-            font-size: 22px;
+        & .termsTxt{
+            font-size: 25px;
+            font-weight: 600;
             color: $white;
+            z-index: 2;
+            position: relative;
+            @include sm{
+                font-size: 30px;
+            }
+            @include md{
+                font-size: 40px;
+            }
+            @include lg{
+                font-size: 50px;
+            }
+        }
+        & .termsPage{
+            font-size: 16px;
+            color: $white;
+            z-index: 2;
+            position: relative;
+            @include md{
+                font-size: 18px;
+            }
+            @include md{
+                font-size: 20px;
+            }
+            @include lg{
+                font-size: 22px;
+            }
+            .breadcrumb-item+.breadcrumb-item::before{
+                color: $white !important;
+            }
             & .termsSpan{
                 font-weight: 500;
                 color: yellow;
             }
+            
         }
     }
 // term Header ends
@@ -307,3 +332,74 @@
         }
     }
 // terms Content ends
+
+// faq section start
+    .faqheader{
+        background-image: url(../img/faqback.avif) !important;
+    }
+    .myNAv{
+        column-gap: 8px !important;
+        & .myNAvItem{
+                width: 48% !important;
+                // border: 1px solid black;
+                margin-block: 5px;
+                @include md{
+                    width: 100% !important;
+                }
+            & .myNAvlink{
+                width: 100% !important;
+                text-align: start !important;
+                font-size: 16px;
+                color: $white;
+                font-weight: 500;
+                background-color: $theme2;
+                border-radius: 10px;
+                padding: 10px;
+                @include sm{
+                    font-size: 18px;
+                }
+                @include lg{
+                    font-size: 20px;
+                }
+                &.active{
+                    background-color: $theme1;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .myaccodionSection{
+        background: $white !important;
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    background-color: aliceblue !important;
+                    padding-inline: 10px;
+                    margin-block: 5px;
+                    & .accordion-button{
+                        padding: 20px 0 !important;
+                        &::after{
+                            filter: none !important;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    .textHead{
+        font-size: 25px;
+        font-weight: 600;
+        z-index: 1;
+        line-height: 110%;
+        @include sm{
+            font-size: 30px;
+        }
+        @include md{
+            font-size: 40px;
+        }
+        @include lg{
+            font-size: 50px;
+        }
+    }
+// faq section ends
