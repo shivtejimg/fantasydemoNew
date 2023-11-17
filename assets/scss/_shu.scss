@@ -169,7 +169,7 @@
         & .mainPayCard{
             border: 1px solid hsla(0,0%,100%,.3137254902);
             border-radius: 8px;
-            padding: 20px 10px;
+            padding: 15px 10px;
             & .crdImg{
                 height: 20px;
                 width: 20px;
@@ -188,8 +188,43 @@
             }
         }
         & .isoImg{
-            height: 65px;
+            height: 57px;
             width: 100%;
+        }
+        & .disclaimertxt{
+            color: $white;
+            font-size: 13px;
+            opacity: 0.7;
+            @include sm{
+                font-size: 14px;
+            }
+            @include md{
+                font-size: 15px;
+            }
+            @include lg{
+                font-size: 16px;
+            }
+        }
+        & .socialLinksDiv{
+            border-top: 2px solid hsla(0,0%,100%,.3137254902);
+            & .socialLinks{
+                & .socialImg{
+                    height: 20px;
+                    width: 20px;
+                    @include sm{
+                        height: 25px;
+                        width: 25px;
+                    }
+                    @include md{
+                        height: 28px;
+                        width: 28px;
+                    }
+                    @include lg{
+                        height: 32px;
+                        width: 32px;
+                    }
+                }
+            }
         }
     }
 // footer ends
