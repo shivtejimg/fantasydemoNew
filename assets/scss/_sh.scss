@@ -259,8 +259,8 @@ body{
         
     }
     & .heroImg{
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 320px;
         @include sm{
             width: 400px;
             height: 400px;
@@ -353,12 +353,16 @@ body{
                 border: none;
                 background-color: transparent;
                 box-shadow: none;
-                font-size: 18px;
+                font-size: 16px;
+                padding: 20px 0px;
                 color: $white;
                 font-weight: 400;
-                padding: 30px 0px;
                 &::after{
                     filter: invert(1);
+                }
+                @include sm{
+                    font-size: 18px;
+                    padding: 30px 0px;
                 }
             }
         }
@@ -518,22 +522,28 @@ body{
         overflow: hidden;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,.09);
         position: fixed;
-        right: 80px;
-        bottom: 15px;
-        width: 55px;
-        height: 55px;
+        right: 15px;
+        bottom: 80px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: rgb(235, 230, 230);
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 10px;
         animation: animatedBackground 1s infinite alternate;
+        @include md{
+            right: 80px;
+            bottom: 15px;
+            width: 55px;
+            height: 55px;
+            padding: 15px;
+
+        }
     }
 }
-.show, .footer-nav:hover {
-    display: block;
-}
+
  @keyframes animatedBackground {
     0% {
         background-position: center 70%;

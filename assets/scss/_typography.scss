@@ -98,8 +98,8 @@
 
 .body_heading{
     color: $white;
-    font-size: 35px;
-    line-height: 50.8px;
+    font-size: 33px;
+    line-height: 40.8px;
     font-weight: 600;
     @include sm{
         font-size: 50px;
@@ -126,8 +126,8 @@
 }
 
 .body_heading_small{
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 600;
     color: $black;
     @include sm{
 
