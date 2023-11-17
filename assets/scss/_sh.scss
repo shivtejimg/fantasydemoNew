@@ -371,7 +371,7 @@ body{
 
 .ctaSection{
     & .ctaCard{
-        background-color: $theme3;
+        background-color: $theme1;
         border-radius: 18px;
         overflow: hidden;
         padding: 20px;
@@ -394,12 +394,15 @@ body{
                 align-items: center;
                 justify-content: center;
                 margin: auto;
+                & img{
+                    filter: invert(1);
+                }
             }
             & .ctaHeading{
                 font-size: 32px;
                 line-height: 43px;
                 font-weight: 500;
-                color: $theme2;
+                color: $white;
                 @include md{
                     font-size: 43px;
                     line-height: 53px;
@@ -407,11 +410,11 @@ body{
             }
             & .ctaButton{
                 color: $white;
-                background-color: $theme1;
-                border: 2px solid $theme1;
-                border-radius: 8.54px;
-                padding: 15px 34px;
-                font-size: 16px;
+                background-color: $theme2;
+                border: 2px solid $theme2;
+                border-radius: 5px;
+                padding: 12px 34px;
+                font-size: 14px;
                 font-weight: 600;
                 line-height: 1.1em;
                 transition: all .2s;
@@ -420,15 +423,42 @@ body{
                 justify-content: center;
                 margin: auto;
                 text-decoration: none;
+                position: relative;
+                overflow: hidden;
+
                 @include sm{
-                    font-size: 18px;
+                    font-size: 15px;
                     &:hover{
-                        transform: scale(1.1);
+                     &::before{
+                        animation: shine 1s;
+                     }
                     }
                 }
                 @include md{
-                font-size: 20px;
+                font-size: 16px;
 
+                }
+
+                &::before{
+                    position: absolute;
+                top: 0;
+                left: -100%;
+                display: block;
+                content: "";
+                width: 50%;
+                height: 100%;
+                background: -o-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+                background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),to(rgba(255,255,255,.3)));
+                background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+                -webkit-transform: skewX(-25deg);
+                -ms-transform: skewX(-25deg);
+                transform: skewX(-25deg);
+                transition: all .3s ease;
+                }
+                @keyframes shine {
+                    100% {
+                        left: 125%;
+                    }
                 }
             }
             
@@ -450,10 +480,12 @@ body{
 }
 
 .bottomFutter{
-    background-color: $theme3;
+    background-color: $theme2;
     // height: 100px;
     padding: 15px 0px;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: 666;
     &::after{
         position: absolute;
         content: '';
@@ -469,8 +501,44 @@ body{
     }
     & .logo{
         width: 180px;
-        height:60px;
+        height:55px;
 
         
     }
+    & .bottomLink{
+        font-size: 18px;
+        color: $white;
+        font-weight: 600;
+        position: relative;
+        z-index: 33;
+      
+    }
+    & .topArrowIocn{
+        z-index: 22;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.09);
+        position: fixed;
+        right: 80px;
+        bottom: 15px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: rgb(235, 230, 230);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        animation: animatedBackground 1s infinite alternate;
+    }
 }
+.show, .footer-nav:hover {
+    display: block;
+}
+ @keyframes animatedBackground {
+    0% {
+        background-position: center 70%;
+    }
+    100% {
+        background-position: 50%;
+    }
+ }
