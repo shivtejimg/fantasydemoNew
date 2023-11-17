@@ -7,7 +7,7 @@
     line-height: 25px;
     @include sm{
         font-size: 18px;
-    line-height: 30px;
+        line-height: 30px;
 
 
     }
@@ -45,9 +45,9 @@
 }
 
 .body_text_large{
-    font-size: 18px;
-    color: $white;
-    line-height: 1.8;
+    font-size: 16px;
+    color: $gray-900;
+    line-height: 22px;
     @include sm{
 
     }
@@ -192,7 +192,7 @@
 
 .body_subheading_small{
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     color: $gray-600;
     @include sm{
 
