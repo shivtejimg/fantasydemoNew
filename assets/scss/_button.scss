@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 25px 10px 20px;
-    border: 1px solid lighten($white, 50);
+    padding: 12px 25px 12px 20px;
+    // border: 1px solid lighten($white, 50);
     font-size: 14px;
     color: $white;
     font-family: 500;
@@ -12,7 +12,7 @@
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%) !important;
+    background: $theme2 !important;
 
     &:hover{
         background-color: $theme1;
