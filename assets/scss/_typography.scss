@@ -45,17 +45,17 @@
 }
 
 .body_text_large{
-    font-size: 16px;
+    font-size: 13px;
     color: $black;
     line-height: 120%;
     @include sm{
-
+        font-size: 14px;
     }
     @include md{
-        
+        font-size: 15px;
     }
     @include lg{
-        
+        font-size: 16px;
     }
     @include xl{
         
@@ -126,17 +126,18 @@
 }
 
 .body_heading_small{
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
+    line-height: 120%;
     color: $black;
     @include sm{
-
+        font-size: 20px;
     }
     @include md{
-        
+        font-size: 23px;
     }
     @include lg{
-        
+        font-size: 26px;
     }
     @include xl{
         
@@ -169,17 +170,17 @@
 
 .body_subheading{
     color: $black;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 120%;
     @include sm{
 
     }
     @include md{
-        
+        font-size: 18px;
     }
     @include lg{
-        
+        font-size: 20px;
     }
     @include xl{
         

@@ -254,7 +254,7 @@
 
 // term Header start
     .termHeader{
-        background-image: url(../img/termsBack.jpg);
+        background-image: url(../img/termsBack.jpg) !important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -272,14 +272,32 @@
             z-index: -1;
         }
         & .termsTxt{
-            font-size: 50px;
+            font-size: 25px;
             font-weight: 600;
             color: $white;
             z-index: 1;
+            @include sm{
+                font-size: 30px;
+            }
+            @include md{
+                font-size: 40px;
+            }
+            @include lg{
+                font-size: 50px;
+            }
         }
         & .termsPage{
-            font-size: 22px;
+            font-size: 16px;
             color: $white;
+            @include md{
+                font-size: 18px;
+            }
+            @include md{
+                font-size: 20px;
+            }
+            @include lg{
+                font-size: 22px;
+            }
             & .termsSpan{
                 font-weight: 500;
                 color: yellow;
