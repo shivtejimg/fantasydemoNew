@@ -7,7 +7,7 @@
     line-height: 25px;
     @include sm{
         font-size: 18px;
-        line-height: 30px;
+    line-height: 30px;
 
 
     }
@@ -46,8 +46,8 @@
 
 .body_text_large{
     font-size: 16px;
-    color: $gray-900;
-    line-height: 22px;
+    color: $black;
+    line-height: 120%;
     @include sm{
 
     }
@@ -169,11 +169,9 @@
 
 .body_subheading{
     color: $black;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
-    text-transform: uppercase;
-    line-height: 18px;
-    letter-spacing: 1.56px;
+    line-height: 120%;
     @include sm{
 
     }
@@ -192,7 +190,7 @@
 
 .body_subheading_small{
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     color: $gray-600;
     @include sm{
 

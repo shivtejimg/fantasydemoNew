@@ -291,8 +291,19 @@
 // terms Content start
     .termsContent{
         & .header{
-            font-size: 25px;
             font-weight: 500;
+        }
+        & .termsList{
+            & ::marker{
+                font-size: 18px !important;
+                font-weight: 600 !important;
+            }
+            & .termslistLi{
+                opacity: 0.7;
+            }
+        }
+        & .contentTxt{
+            opacity: 0.9;
         }
     }
 // terms Content ends
