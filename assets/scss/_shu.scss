@@ -251,3 +251,48 @@
         }
     }
 // footer ends
+
+// term Header start
+    .termHeader{
+        background-image: url(../img/termsBack.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        position: relative;
+        z-index: -2;
+        &::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        & .termsTxt{
+            font-size: 50px;
+            font-weight: 600;
+            color: $white;
+            z-index: 1;
+        }
+        & .termsPage{
+            font-size: 22px;
+            color: $white;
+            & .termsSpan{
+                font-weight: 500;
+                color: yellow;
+            }
+        }
+    }
+// term Header ends
+
+// terms Content start
+    .termsContent{
+        & .header{
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+// terms Content ends
