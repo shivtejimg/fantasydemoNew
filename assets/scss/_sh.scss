@@ -53,6 +53,10 @@ body{
                     &:hover{
                         color:lighten($theme1, 40);
                     }
+                    &.active{
+                        color:lighten($theme1, 40);
+
+                    }
                 
     
                 }
