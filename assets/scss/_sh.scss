@@ -217,11 +217,12 @@ body{
     background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%);
     // background-image: linear-gradient(rgba(30, 44, 55, .31), #032A37), linear-gradient(rgba(17, 148, 255, 0.16), rgba(17, 148, 255, 0.493)), url(../img/background.png);
 
-    height: 100vh;
+    height: 80vh;
     z-index: 1;
     position: relative;
 
     @include sm{
+        height: 100vh;
 
     }
     @include lg{
