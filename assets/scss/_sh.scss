@@ -78,7 +78,7 @@ body{
     & .navbar{
         &.nav-active{
             background: linear-gradient(162deg, rgba(3,42,55,1) 0%, rgba(1,74,117,1) 59%) !important;
-
+            backdrop-filter: blur(10px);
         }
         &:not(.nav-active){
             background-color: transparent;
