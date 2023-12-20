@@ -114,6 +114,14 @@
                 width: 70%;
                 margin-inline: auto;
                 @include sm{
+                    height: 80px;
+                    width: 100%;
+                }
+                @include md{
+                    height: 90px;
+                    width: 100%;
+                }
+                @include lg{
                     height: 100px;
                     width: 100%;
                 }
@@ -143,8 +151,12 @@
     .footerSection{
         background-color: $black;
         & .logoImg{
-            height: 55px;
-            width: 200px;
+            height: 40px;
+            width: 140px;
+            @include sm{
+                height: 55px;
+                width: 200px;
+            }
         }
         & .heading{
             padding-top: 20px;
@@ -403,3 +415,4 @@
         }
     }
 // faq section ends
+
